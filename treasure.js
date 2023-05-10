@@ -28,7 +28,8 @@ AFRAME.registerComponent("coins", {
       dur: 1000,
     });  
     
-    
+    coinEl.setAttribute("static-body",{shape:"sphere",sphereRadius:2});
+
     treasureEntity.appendChild(coinEl);
   }
 });

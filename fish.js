@@ -27,10 +27,12 @@ AFRAME.registerComponent("fish", {
         property: "position",
         to: "100 10 -20",
         loop: "true",
-        dur: 20000
+        dur: 200000
     });
 
     fishEl.setAttribute("animation-mixer", {});
+
+    fishEl.setAttribute("static-body",{shape:"sphere",sphereRadius:2});
 
     fishModelEntity.appendChild(fishEl);
     }
